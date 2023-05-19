@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int cost;
+        int unit = sc.nextInt();
+        if(unit*100 > 1000){
+            cost = (unit*100) - ((10 * unit*100)/100);
+            System.out.print(cost);
+        }else{
+            System.out.print(unit*100);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
